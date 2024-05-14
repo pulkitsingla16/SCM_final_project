@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadai Paneer</title>
+    <style>
+        .logo {
+    /* height: auto; */
+    width: 160px;
+    border-radius: 4px;
+    box-shadow: 0px 5px 20px rgba(240,240,240,0.25);
+    margin: 10px 10px;
+    vertical-align: middle;
+}
+.heading{
+
+    display: flex;
+    vertical-align: middle;
+}
+.kadai {
+    color: white;
+    vertical-align:bottom;
+    padding: 30px 20px;
+    font-size: 48px;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 6px;
+    
+
+}
+.video{
+    display:flex;
+    /* justify-content:space-between; */
+   
+}
+.ingre{
+    border: none;
+    border-radius: 6px;
+    padding: 32px 24px;
+    background: rgba(0,0,0,0.7);
+    width: 400px;
+    justify-content:end;
+    margin-left: 150px;
+    color:white;
+    font-size:16px;
+    
+}
+#id{
+    font-size:24px;
+
+}
+#head{
+    font-size:40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: beige;
+}
+.parent > * {
+  display: inline;
+}
+.content {
+      display: none;
+    }
+
+    .read-more-btn {
+      display: block;
+      margin-top: 10px;
+      cursor: pointer;
+      color: blue;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="heading">
+        <img class="logo" src="bor celle.png"> 
+        <h1 class="kadai">Kadai Paneer</h1>
+    </div>    
+    <div class="video">
+        <iframe width="800" height="550"
+         src="https://www.youtube.com/embed/W2OBc4RQ5o0">
+        </iframe>
+        <div>
+            <h2 class="ingre" id="head">Ingredients</h2>
+        <p class="ingre" id="id">2 tbsp coriander seeds<br>
+            2 tsp cumin<br>2 tsp fennel<br>3 dried red chilli<br>3 dried red chilli<br>2 tsp pepper<br>
+            2 tbsp oil<br>2 tsp ghee<br>1 tsp cumin<br>5 cloves garlic, finely chopped<br>
+            1 inch ginger, finely chopped<br>2 onion, finely chopped<br>½ tsp turmeric<br>
+            1 tsp chilli powder<br>1 tbsp kadai masala<br>1 tsp salt<br>3 tomato, chopped
+            2 tbsp cream<br>1 tsp kasuri methi, crushed<br>2 tbsp coriander, chopped<br>
+            1 inch ginger, julienne cut<br>2 tsp oil<br>onion<br>capsicum<br>tomato<br>
+            paneer<br>1 tsp garam masala
+        </p>
+        </div>
+    </div>
+    <div class="content">
+        <p>
+            Heat oil in a kadhai (wok) or a large pan. Add cumin seeds and let them splutter.
+
+            Add finely chopped onions and sauté until they turn golden brown.
+            
+            Add ginger-garlic paste and chopped green chilies. Sauté for a minute until the raw smell disappears.
+            
+            Add finely chopped tomatoes and cook until they become soft and the oil starts to separate.
+            
+            Add tomato puree, red chili powder, turmeric powder, coriander powder, and salt. Mix well and cook for a few minutes until the masala is well cooked.
+            
+            Add sliced green and red bell peppers. Cook for 3-4 minutes until they are slightly tender but still have a crunch.
+            
+            Add paneer cubes and mix gently to coat them with the masala.
+            
+            Add fresh cream and garam masala. Stir well and cook for an additional 2-3 minutes.
+            
+            Add butter for extra richness and flavor. Mix well and cook for a minute.
+            
+            Garnish with chopped coriander leaves.
+            
+            Serve hot with naan, roti, or rice.
+            
+            Enjoy your delicious Kadhai Paneer! Adjust the spice levels according to your preference.
+        </p>
+      </div>
+    
+      <div class="read-more-btn" onclick="toggleReadMore()">Read More</div>
+    
+      <script>
+        function toggleReadMore() {
+          var content = document.querySelector('.content');
+    
+          if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'block';
+          } else {
+            content.style.display = 'none';
+          }
+        }
+      </script>
+</body>
+</html>
